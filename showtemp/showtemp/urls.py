@@ -21,4 +21,5 @@ from django.urls import path
 urlpatterns = [
     path('', views.temp_here, name='temp_here'),
     # path('/postman', views.temp_here().context.res, name='temp_here'),
+    path('testing_post_route', views.handle_post_request, name='testing_post_route'),
 ]
