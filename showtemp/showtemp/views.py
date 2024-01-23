@@ -1,8 +1,8 @@
 import requests
 from django.shortcuts import render
 import geocoder
-from django.http import HttpResponse
 from datetime import datetime
+from django.http import JsonResponse
 
 # Create your views here.
 def temp_here(request):
@@ -15,4 +15,15 @@ def temp_here(request):
     hour = now.hour
     meteo_data = res
     temp = meteo_data['hourly']['temperature_2m'][hour]
-    return HttpResponse(f"Here it's {temp}")
+    # return HttpResponse(f"Here it's {temp} C") 
+
+    
+    # context = {'temp': temp, 'res': res}
+
+    # For a regular HTML response
+    # return render(request, 'your_template.html', context)
+
+    # For a JsonResponse (for AJAX or API response)
+    # return JsonResponse(context)
+    return JsonResponse(res)
+
