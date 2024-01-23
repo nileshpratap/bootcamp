@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "showtemp"
+version = "0.1.0"
+description = ""
+authors = ["nileshpratap <nileshpratap03@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.1"
+geocoder = "^1.38.1"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
