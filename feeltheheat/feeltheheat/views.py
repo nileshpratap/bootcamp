@@ -1,4 +1,5 @@
 import requests
+import json
 from django.shortcuts import render
 import geocoder
 from datetime import datetime
@@ -29,7 +30,10 @@ def temp_here(request):
 
         # For a JsonResponse (for AJAX or API response)
         # return JsonResponse(context)
-        return JsonResponse(res)
+        result = {'here it feels like: ': f"{temp} Degrees", 'data': str(res)}
+        result_str = json.dumps(result)
+        print(result_str)
+        return JsonResponse(result)
     elif request.method == 'POST':
         return JsonResponse({'msg':'hey, please make a get request for this route.'})
 
@@ -46,9 +50,9 @@ def handle_post_request(request):
             # Parse the JSON data
             json_data = json.loads(body_str)
 
-            # Your processing/db operations with json_data
-            
-            return JsonResponse({'message': 'Data received. You sent this data to us', 'data': json_data})
+            result = {'message': 'Data received. You sent this data to us', 'data': json_data}
+            print(result)
+            return JsonResponse(result)
         except json.JSONDecodeError as e:
             return JsonResponse({'error': 'Invalid JSON data'}, status=400)
     
