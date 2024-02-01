@@ -1,0 +1,54 @@
+0,1,2,3,4,5,6
+Individual death claims settlement by % of policies,,,,,,
+Life Insurer,Total claims,Claims paid,Claims repudiated,,,
+,No. of policies,No. of policies,% of total claims,No. of policies,% of total claims,
+Aditya Birla Sun Life,10008,9815,98.07,186,1.86,
+Aegon Life,720,713,99.03,6,0.83,
+Ageas Federal,2694,2614,97.03,57,2.12,
+Aviva Life,1672,1645,98.39,27,1.61,
+Bajaj Allianz,21050,20844,99.02,195,0.93,
+Bharti Axa Life,3203,3174,99.09,27,0.84,
+Canara HSBC,2813,2769,98.44,41,1.46,
+Edelweiss Tokio,995,976,98.09,19,1.91,
+Exide Life,7279,7213,99.09,7,0.1,
+Future Generali,1664,1600,96.15,64,3.85,
+HDFC Life,27122,26758,98.66,136,0.5,
+ICICI Prudential,22281,21795,97.82,398,1.79,
+India First,4937,4785,96.92,143,2.9,
+Kotak Life,7133,7049,98.82,60,0.84,
+Max Life,31035,30830,99.34,205,0.66,
+PNB Met Life,8586,8357,97.33,224,2.61,
+Pramerica Life,1061,1043,98.3,16,1.51,
+Reliance Nippon,13730,13548,98.67,174,1.27,
+Sahara Life,1166,1132,97.08,16,1.37,
+SBI Life,55786,54140,97.05,1541,2.76,
+Shriram Life*,5865,5620,95.82*,163,11.61,
+SUD Life,2951,2875,97.42,74,2.51,
+Tata AIA Life,8069,7950,98.53,117,1.45,
+LIC,1367104,1349865,98.74,8713,0.64,
+Individual death claims settlement by % of benefit amount,,,,,,
+Life insurance company,Total no. of claims,Total amount of claim (cr),No. of claims paid,Amount of claims paid (cr),% No. of claims paid,% amount of claims paid
+Max Life,31035,2077.31,30830,2008.94,99.34%,96.71%
+Bharti Axa Life,3203,243.59,3174,234.72,99.09%,96.36%
+Exide Life,7279,318.62,7213,306.81,99.09%,96.29%
+Aegon Life,720,276.48,713,273.04,99.03%,98.76%
+Bajaj Allianz,21050,825.97,20844,771.88,99.02%,93.45%
+Kotak Life,7133,614,7049,586,98.82%,95.53%
+LIC,1367104,29586,1349865,28408,98.74%,96.02%
+Reliance Nippon,13730,360.76,13548,344.14,98.67%,95.39%
+HDFC Life,27122,2918.24,26758,2608.22,98.66%,89.38%
+Tata AIA Life,8069,1603.93,7950,1518.17,98.53%,94.65%
+Canara HSBC,2813,288.1,2769,277.79,98.44%,96.42%
+Aviva Life,1672,270.95,1645,266.7,98.39%,98.43%
+Pramerica Life,1061,53.04,1043,51.34,98.30%,96.79%
+Edelweiss Tokio,995,159.86,976,152.06,98.09%,95.12%
+Aditya Birla Sun Life,10008,880.32,9815,846.43,98.07%,96.15%
+ICICI Prudential,22281,3118.04,21795,2977.5,97.82%,95.49%
+SUD Life,2951,171.32,2875,156.6,97.42%,91.41%
+PNB Met Life,8586,717.43,8357,669.69,97.33%,93.35%
+Sahara Life,1166,12.85,1132,12.47,97.08%,97.04%
+SBI Life,55786,2910.14,54140,2751.53,97.05%,94.55%
+Ageas Federal,2694,134.73,2614,122.63,97.03%,91.02%
+India First,4937,249.53,4785,227.31,96.92%,91.10%
+Future Generali,1664,86.69,1600,77.67,96.15%,89.60%
+Shriram Life*,5865,203.16,5620,167.39,95.82%*,82.39%*
