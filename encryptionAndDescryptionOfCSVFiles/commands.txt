@@ -1,0 +1,5 @@
+# Encrypt the file using certutil
+certutil -encode -f scraped_data.csv encrypted_scraped_data.enc
+
+# Decrypt the file using certutil
+certutil -decode -f encrypted_scraped_data.enc decrypted_scraped_data.csv
