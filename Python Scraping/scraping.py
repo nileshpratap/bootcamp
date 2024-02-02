@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import json
 import pandas as pd
 
 def scrape_tables(url):
@@ -23,11 +22,12 @@ def scrape_tables(url):
 scraped_data = scrape_tables("https://economictimes.indiatimes.com/wealth/insure/life-insurance/latest-life-insurance-claim-settlement-ratio-of-insurance-companies-in-india/articleshow/97366610.cms")
 print("hi",scraped_data)
 
+# creating pandas dataframe
 df = pd.DataFrame(scraped_data)
 
 # Specify the CSV file path
 csv_file_path = 'scraped_data.csv'
 
 # Write the DataFrame to the CSV file, ensuring the file is created anew
-df.to_csv(csv_file_path, index=False, mode='w')
+df.to_csv(csv_file_path, mode='w', index=False)
 
