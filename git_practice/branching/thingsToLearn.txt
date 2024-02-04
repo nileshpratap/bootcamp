@@ -1,0 +1,9 @@
+critical:
+what is it? why use it?
+Git HEAD
+Git branch, switch, checkout commands
+
+rest:
+HEAD and Refs behind the scenes
+master vs main branch
+deleting and renaming branches
