@@ -20,10 +20,28 @@ def scrape_tables(url):
     return table_data
 
 scraped_data = scrape_tables("https://economictimes.indiatimes.com/wealth/insure/life-insurance/latest-life-insurance-claim-settlement-ratio-of-insurance-companies-in-india/articleshow/97366610.cms")
-print("hi",scraped_data)
+# print("hi",scraped_data)
+
 
 # creating pandas dataframe
 df = pd.DataFrame(scraped_data)
+
+# arranging the table accordingly
+# Get the number of rows and columns
+num_rows, num_columns = df.shape
+
+# row one transformed
+df.iloc[0, 0] = df.iloc[0].str.cat()
+# Drop columns starting from the 2nd column for the 1st row
+df.iloc[0, 2:] = None
+
+# row two transformed
+df.iloc[1, 2] = df.iloc[1, 2] + df.iloc[1, 3]
+# Drop the 2nd column in the first row
+df = df.drop(df.index[0], axis=3)
+df.iloc[1, 3] = df.iloc[1, 3] + df.iloc[1, 4]
+# Drop the 2nd column in the first row
+df = df.drop(df.index[1], axis=4)
 
 # Specify the CSV file path
 csv_file_path = 'scraped_data.csv'
