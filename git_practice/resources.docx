@@ -1,0 +1,16 @@
+course link
+https://lumiqai.udemy.com/course/git-and-github-bootcamp
+
+doc
+https://docs.google.com/document/d/1alEK8hto67t-Im91jDLavIDUXxdDDofj4Wnx38--1eE/edit?usp=sharing
+
+git staging
+Staging allows you to selectively choose which changes you want to include in the next commit. You can stage specific changes in a file while leaving other changes in the same file unstaged.
+
+ofcl docs
+https://git-scm.com/docs
+
+structured book for githttps://git-scm.com/book/en/v2
+
+gitignore snippet:
+https://www.toptal.com/developers/gitignore/
