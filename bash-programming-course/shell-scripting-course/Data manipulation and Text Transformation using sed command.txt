@@ -1,0 +1,28 @@
+sed stands for stream editor
+a stream is data that travels from:
+    one process to another through a pipe
+    one file to another as a redirect
+    one device to another
+SED is used for finding, filtering, text substitution, replacement and text manipulations like insertion, deletion search,
+sed is a stand-alone utility and not a shell built in
+by default, sed is performed on all lines, and in each line, sed replaces only the first occurence of the pattern/word
+
+sed command gives some output, but it does not update anything in the file actually
+
+command syntax: sed 's/patternToFind/toReplaceThemAs/flags' file_path
+flags
+i/I : applies case insensitivity
+by default, sed is performed on all lines, and in each line, sed replaces only the first occurence of the pattern/word
+to handle this, 'g' flag is used to apply everything in entire file.
+if we just want to replace the 2nd occurence of pattern, we use 2 as flag.
+
+-i option with sed command represents in place editing the file
+
+if we want to save a copy of file before inplace editing, write some text after -i"some_text" dont give any space after -i
+
+if we want to create a file and write only the lines which got changes, we can use w flag
+sed 's/love/like/gw like.txt' love.txt
+this changes all love words in love.txt and replaces them and put all the changed lines into new file like.txt
+
+
+

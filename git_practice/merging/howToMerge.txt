@@ -1,0 +1,6 @@
+- when we have merge two branches,
+we/HEAD have to point at receiving branch.
+- use git merge command to merge changes from a specific branch into the current branch
+
+fast forward commit:
+means the master branch just moved forward by some commits when we merge other branch into the master branch to catch up the branch and point to the latest commit.
