@@ -103,7 +103,7 @@ def getupdateddata ():
 while True:
     getupdateddata()
     # Introduce a short delay to avoid high CPU usage
-    time.sleep(60)  # Sleep for 1 second
+    time.sleep(60*60*24*7)  # Sleep for 1 week
 
 
 # # Stop the Spark session
