@@ -100,10 +100,12 @@ def getupdateddata ():
         pandas_df.to_parquet(parquet_file_path, engine='pyarrow')
 
 
-while True:
+# while True:
     getupdateddata()
     # Introduce a short delay to avoid high CPU usage
-    time.sleep(60*60*24*7)  # Sleep for 1 week
+    # time.sleep(60*60*24*7)  # Sleep for 1 week
+    # time.sleep(30)  # Sleep for 30seconds
+    print(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} // executing the routine" )
 
 
 # # Stop the Spark session

@@ -1,10 +1,11 @@
-version: "3"
+version: '3'
 
 services:
+
   sleek-airflow:
-    image: airmg
+    image: airimg
     volumes:
       - ./airflow:/opt/airflow
     ports:
-      - "8090:8090"
+      - "8080:8080"
     command: airflow standalone
